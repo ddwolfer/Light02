@@ -1,8 +1,9 @@
 /// @description 
-width = room_width;
+width = room_width; 
 height = room_height;
 
-scale = 5
+
+scale = width/192
 minimapX = 10;
 minimapY = 10;
 
