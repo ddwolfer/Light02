@@ -51,7 +51,7 @@ if(slideFlagX){
 }
 
 //if player leaves the view on the bottom
-if (oPlayer.y > camera_get_view_y(view_camera[0]) + 160)
+if (oPlayer.y > camera_get_view_y(view_camera[0]) +160 )
 {
 	oPlayer.PlayerControl = false
 	targetSlideY = R_Y + 160
@@ -60,11 +60,11 @@ if (oPlayer.y > camera_get_view_y(view_camera[0]) + 160)
 	slideFlagY = true
 }
 //if player leaves the view on the top
-if (oPlayer.y < camera_get_view_y(view_camera[0]))
+if (oPlayer.y < camera_get_view_y(view_camera[0]) + 10  )
 {
 	oPlayer.PlayerControl = false
 	targetSlideY = R_Y - 160
-	PlayerMove = oPlayer.y - 4
+	PlayerMove = oPlayer.y - 14
 	oMiniMap.MapWalkThrogh[ x/240 , targetSlideY/160 ] = 1
 	slideFlagY = true
 }

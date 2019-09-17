@@ -14,6 +14,13 @@ with(oWall){
 		draw_rectangle(10+x/Wallscale-sprite_width/(2*5),10+y/Wallscale-sprite_width/(2*5),10+x/Wallscale+sprite_width/(2*5),10+y/Wallscale+sprite_width/(2*5),0)
 	}
 }
+/*
+for(var i = 0 ; i < width/240 ; i++){
+	for(var j = 0 ; j < height/160 ; j++){
+		if( MapWalkThrogh[i , j] ){
+		}
+	}
+}*/
 
 with(oPlayer){
 	var PlayerScale = camera_get_view_height(view_camera[0])/32
