@@ -15,3 +15,7 @@ for(var i = 0 ; i < width/cameraWidth ; i++){
 }
 MapWalkThrogh[0,0] = 1 //初始的地方
 
+MiniMapX1 = 0
+MiniMapX2 = 3
+MiniMapY1 = 0
+MiniMapY2 = 3

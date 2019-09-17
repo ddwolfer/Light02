@@ -25,8 +25,13 @@ if (oPlayer.x > camera_get_view_x(view_camera[0]) + 240)
 	oPlayer.PlayerControl = false
 	targetSlideX = R_X + 240
 	PlayerMove = oPlayer.x + 12
-	oMiniMap.MapWalkThrogh[ targetSlideX/240 , y/160 ] = 1
+	oMiniMap.MapWalkThrogh[ targetSlideX/240 , y/160 ] = 1 //記住走過的地方
 	slideFlagX = true
+	//調整小地圖位置
+	if(targetSlideX/240 >= oMiniMap.MiniMapX2 && targetSlideX/240 < oMiniMap.width/240 -1){
+		oMiniMap.MiniMapX2++
+		oMiniMap.MiniMapX1++
+	}
 }
 //if player leaves the view on the left
 if (oPlayer.x < camera_get_view_x(view_camera[0]))
@@ -34,8 +39,13 @@ if (oPlayer.x < camera_get_view_x(view_camera[0]))
 	oPlayer.PlayerControl = false
 	targetSlideX = R_X - 240
 	PlayerMove = oPlayer.x - 12
-	oMiniMap.MapWalkThrogh[ targetSlideX/240 , y/160 ] = 1
+	oMiniMap.MapWalkThrogh[ targetSlideX/240 , y/160 ] = 1 //記住走過的地方
 	slideFlagX = true
+	//調整小地圖位置
+	if(targetSlideX/240 <= oMiniMap.MiniMapX1 && targetSlideX/240!=0){
+		oMiniMap.MiniMapX2--
+		oMiniMap.MiniMapX1--
+	}
 }
 
 if(slideFlagX){
@@ -56,8 +66,13 @@ if (oPlayer.y > camera_get_view_y(view_camera[0]) +160 )
 	oPlayer.PlayerControl = false
 	targetSlideY = R_Y + 160
 	PlayerMove = oPlayer.y + 18
-	oMiniMap.MapWalkThrogh[ x/240 , targetSlideY/160 ] = 1
+	oMiniMap.MapWalkThrogh[ x/240 , targetSlideY/160 ] = 1 //記住走過的地方
 	slideFlagY = true
+	//調整小地圖位置
+	if(targetSlideY/160 >= oMiniMap.MiniMapY2 && targetSlideY/160 < oMiniMap.height/160 -1){
+		oMiniMap.MiniMapY2++
+		oMiniMap.MiniMapY1++
+	}
 }
 //if player leaves the view on the top
 if (oPlayer.y < camera_get_view_y(view_camera[0]) + 10  )
@@ -65,8 +80,13 @@ if (oPlayer.y < camera_get_view_y(view_camera[0]) + 10  )
 	oPlayer.PlayerControl = false
 	targetSlideY = R_Y - 160
 	PlayerMove = oPlayer.y - 14
-	oMiniMap.MapWalkThrogh[ x/240 , targetSlideY/160 ] = 1
+	oMiniMap.MapWalkThrogh[ x/240 , targetSlideY/160 ] = 1 //記住走過的地方
 	slideFlagY = true
+	//調整小地圖位置
+	if(targetSlideY/160 <= oMiniMap.MiniMapY1 && targetSlideY/160!=0){
+		oMiniMap.MiniMapY2--
+		oMiniMap.MiniMapY1--
+	}
 }
 if(slideFlagY){
 	if( R_Y == targetSlideY ){
