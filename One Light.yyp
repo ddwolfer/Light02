@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0a242add-d7ef-42a8-b81c-5e0ab4263337",
+            "Value": {
+                "id": "adceee1c-08da-462b-978e-799daea4de85",
+                "resourcePath": "scripts\\createHitbox\\createHitbox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0a3b8e87-b046-4501-8d22-b46446eef8f0",
             "Value": {
                 "id": "bbc858c7-2267-47d9-bf9b-c6e116de6c11",
@@ -268,6 +276,14 @@
                 "id": "501aacf8-163a-46e7-87f1-6148a30a172d",
                 "resourcePath": "objects\\oLightGlow\\oLightGlow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "48d5b553-dddc-40c8-b938-9b167d0f1609",
+            "Value": {
+                "id": "4d71237c-6faf-40b1-8b38-731c3d645a7e",
+                "resourcePath": "sprites\\sPlayerAttack\\sPlayerAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -588,6 +604,14 @@
                 "id": "e9d40ee0-7eae-4bef-aff8-eda047c221b0",
                 "resourcePath": "views\\97f7e431-888b-44a3-86df-5ad7c3edb65f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "989563d8-0c2f-4bac-b7f3-d6fa4858fe9f",
+            "Value": {
+                "id": "afbbec49-39e8-42af-9ec0-dcd780bd2b5b",
+                "resourcePath": "objects\\oHitbox\\oHitbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1076,7 +1100,8 @@
         "14c6056c-0a32-497e-8985-d49b49f221fd",
         "f741bddb-4ff7-4e58-9c95-25820839d2ed",
         "b6aa7266-b671-400c-9f50-94fbbd654d2a",
-        "d0d660c4-5952-4386-bdcc-95b80a6b6cb4"
+        "d0d660c4-5952-4386-bdcc-95b80a6b6cb4",
+        "0a242add-d7ef-42a8-b81c-5e0ab4263337"
     ],
     "tutorial": ""
 }

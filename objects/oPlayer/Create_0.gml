@@ -15,4 +15,6 @@ depth = 10;
 
 textboxFlag = 0
 
+state = "idle";
+
 //instance_create_layer(x, y, "Main", oPlayerGlow);
